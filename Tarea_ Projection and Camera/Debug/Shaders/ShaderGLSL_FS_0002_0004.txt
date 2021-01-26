@@ -1,0 +1,16 @@
+
+//== SHADER COMPILE STATUS = TRUE
+/*== INFO LOG ==
+0(2) : warning C7568: #version 430 not fully supported on current GPU target profile
+  == INFO LOG END ==*/
+#version 430
+
+out vec4 color;
+in vec4 varyingColor; // captura la variable varyingColor
+
+uniform mat4 mv_matrix;
+uniform mat4 proj_matrix;
+
+void main() {
+    color = varyingColor;
+}
